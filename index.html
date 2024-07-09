@@ -367,8 +367,9 @@
                 <label for="email" class="form-label">Email address:</label>
                 
                 <div class="mb-4 input-group">
-                   <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
+                  <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
                   <input type="email" class="form-control" id="email" placeholder="e.g. nana@example.com">
+                  <span class="tt" data-bs-placement="bottom" data-bs-title="Enter an email address we can reply to." data-bs-toggle="tooltip" ><span class="input-group-text"><i class="bi bi-question-circle"></i></span></span>
                 </div>
 
 
@@ -382,6 +383,7 @@
                     id="email"
                     placeholder="e.g Nana"
                   />
+                      <span class="tt" data-bs-placement="bottom" data-bs-title="Just enter your name, goddamnit" data-bs-toggle="tooltip" ><span class="input-group-text"><i class="bi bi-question-circle"></i></span></span>
                 </div>
                 <label for="subject" class="form-label">What is your question about?</label>
                 <div class="input-group mb-4">
@@ -408,6 +410,49 @@
         </div>
       </div>
     </section>
+
+     <!-- get updates / modal trigger  -->
+     <section class="bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in the Loop</h2>
+          <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni cupiditate maiores tempore quos nostrum quasi minus esse perspiciatis soluta tenetur. Earum dolor quos consequuntur nobis cum, vel omnis cumque accusantium?
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal" >
+                Register for updates
+            </button>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- modal itself  -->
+     <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title">
+                Get the Latest Updates
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ipsa qui assumenda enim soluta quas dolores quasi magnam cum dolorum. Repudiandae quo qui aperiam quos numquam ipsam natus ullam atque?</p>
+              <label for="modal-email" class="form-label">Add your email address</label>
+              <input type="email" class="form-control" id="modal-email" placeholder="e.g. nana@example.com">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary">Submit</button>
+            </div>
+          </div>
+        </div>
+     </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
